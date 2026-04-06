@@ -10,9 +10,8 @@ import Header from '@/components/Header.astro'
 import '@fortawesome/fontawesome-free/css/all.css'
 import 'bulma/css/versions/bulma-prefixed.css'
 
-const {
-  meta: { title = config.title, description = config.description }
-} = Astro.props
+const { meta = {} } = Astro.props
+const { title = config.title, description = config.description } = meta
 ---
 
 <html lang={config.lang}>
