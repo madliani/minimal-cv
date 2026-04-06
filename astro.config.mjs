@@ -20,5 +20,5 @@ export default defineConfig({
     }),
     mdx()
   ],
-  site: 'https://minimal-cv.vercel.app/'
+  site: 'https://madliani.vercel.app/'
 })
