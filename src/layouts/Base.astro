@@ -11,7 +11,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import 'bulma/css/versions/bulma-prefixed.css'
 
 const {
-  meta: { title, description = config.description }
+  meta: { title = config.title, description = config.description }
 } = Astro.props
 ---
 
