@@ -1,7 +1,7 @@
 ---
+import CVDownloadButton from '@/components/CVDownloadButton.astro'
 import EduCard from '@/components/EduCard.astro'
 import ExpCard from '@/components/ExpCard.astro'
-import ResumeDlButton from '@/components/ResumeDlButton.astro'
 import SummaryColumns from '@/components/SummaryColumns.astro'
 import Base from '@/layouts/Base.astro'
 ---
@@ -23,7 +23,9 @@ import Base from '@/layouts/Base.astro'
       <EduCard />
     </section>
 
-    <!-- Resume download -->
-    <div class="bulma-section"><ResumeDlButton /></div>
+    <!-- CV download -->
+    <div class="bulma-section">
+      <CVDownloadButton />
+    </div>
   </div>
 </Base>
