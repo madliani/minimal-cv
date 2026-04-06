@@ -1,0 +1,32 @@
+---
+import Base from '@/layouts/Base.astro'
+---
+
+<Base meta={{ title: '404 — Page Not Found' }}>
+  <div class="bulma-hero">
+    <div class="bulma-hero-body">
+      <div class="bulma-container bulma-has-text-centered">
+        <p
+          class="bulma-title bulma-is-size-1 bulma-has-text-danger bulma-is-spaced"
+        >
+          404 — Page Not Found.
+        </p>
+
+        <p class="bulma-subtitle bulma-is-size-3">
+          Oops! We couldn't find the page you're looking for.
+        </p>
+
+        <a
+          href="/"
+          class="bulma-button bulma-is-large bulma-is-primary bulma-is-rounded"
+        >
+          <span class="bulma-icon">
+            <i class="fas fa-home"></i>
+          </span>
+
+          <span>Go back to Home</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</Base>

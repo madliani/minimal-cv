@@ -1,19 +1,29 @@
 ---
+import EduCard from '@/components/EduCard.astro'
+import ExpCard from '@/components/ExpCard.astro'
+import ResumeDlButton from '@/components/ResumeDlButton.astro'
+import SummaryColumns from '@/components/SummaryColumns.astro'
 import Base from '@/layouts/Base.astro'
 ---
 
 <Base meta={{ title: 'Home' }}>
-  <h2 class="text-2xl font-medium tracking-wide text-accentColor w500:text-lg">
-    Home
-  </h2>
+  <div class="bulma-container">
+    <!-- Summary with photo -->
+    <div class="bulma-section">
+      <SummaryColumns />
+    </div>
 
-  <div class="mt-4 tracking-wide w500:text-sm w500:leading-[2.2]">
-    <p>
-      Minimal is minimalistic astro blog theme. Check the <a
-        class="underline"
-        target="_blank"
-        href="https://github.com/ekmas/minimal">project repo</a
-      > for more info.
-    </p>
+    <!-- Experience -->
+    <section class="bulma-section">
+      <ExpCard />
+    </section>
+
+    <!-- Education -->
+    <section class="bulma-section">
+      <EduCard />
+    </section>
+
+    <!-- Resume download -->
+    <div class="bulma-section"><ResumeDlButton /></div>
   </div>
 </Base>

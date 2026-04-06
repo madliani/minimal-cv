@@ -12,9 +12,9 @@ type Config = {
 }
 
 export default {
-  author: 'Samuel Breznjak',
-  title: 'Minimal - Astro blog theme',
-  description: 'Minimalistic blog theme for astro',
+  author: 'madliani',
+  title: 'madliani - Front-end developer',
+  description: 'Minimalistic personal website',
   lang: 'en',
   themes: {
     dark: 'github-dark',

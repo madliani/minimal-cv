@@ -6,20 +6,17 @@ Minimal is a minimalistic astro theme for blogs.
 
 ## Get started
 
-[Create a new repo](https://github.com/ekmas/minimal/generate) from this template.
+[Create a new repo](https://github.com/madliani/minimal-resume/generate) from this template.
 
 ## Features
 
 - Astro v4
-- Tailwind for styling
 - Responsive & SEO-friendly
-- Dark/Light mode support
-- MD & MDX posts
 - View Transitions API
 - Content collections
 - Expressive-code code blocks
 - Shiki code syntax styling
-- Icons by [Svgrepo](https://www.svgrepo.com/)
+- Icons by [Font Awesome 7](https://fontawesome.com/)
 
 ## Configure
 
@@ -29,33 +26,18 @@ Minimal is a minimalistic astro theme for blogs.
 - You can customize code blocks config by changing `expressiveCode` object in astro config. Visit [expressive-code docs](https://expressive-code.com/reference/configuration) for more info.
 - To change code blocks theme, you'll have to update themes both in `themes` array and in `config.ts`
 
-## How to add new post
-
-Create a new md/mdx file inside src/content/posts, and make sure it's in this format:
-
-```
----
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Dec 22 2023'
-tags: ['astro', 'blogging', 'learning']
----
-
-Your post
-```
-
 ## Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `yarn install`         | Installs dependencies                            |
+| `yarn dev`             | Starts local dev server at `localhost:4321`      |
+| `yarn build`           | Build your production site to `./dist/`          |
+| `yarn preview`         | Preview your build locally, before deploying     |
+| `yarn astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `yarn astro -- --help` | Get help using the Astro CLI                     |
 
 ## License
 
