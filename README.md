@@ -1,4 +1,4 @@
-# Minimal Resume
+# Minimal CV
 
 > This is a fork of [minimal (commit 2e2cd80)](https://github.com/ekmas/minimal/) by [Samuel Breznjak (nickname ekmas)](https://github.com/ekmas/).
 
@@ -6,7 +6,7 @@ Minimal is a minimalistic astro theme for blogs.
 
 ## Get started
 
-[Create a new repo](https://github.com/madliani/minimal-resume/generate) from this template.
+[Create a new repo](https://github.com/madliani/minimal-cv/generate) from this template.
 
 ## Features
 
