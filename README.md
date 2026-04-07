@@ -2,7 +2,7 @@
 
 > This is a fork of [minimal (commit 2e2cd80)](https://github.com/ekmas/minimal/) by [Samuel Breznjak (nickname ekmas)](https://github.com/ekmas/).
 
-Minimal is a minimalistic astro theme for blogs.
+Minimal CV is a minimalist personal website.
 
 ## Get started
 
