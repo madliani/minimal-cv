@@ -14,7 +14,7 @@ type Config = {
 export default {
   author: 'madliani',
   title: 'madliani - Front-end developer',
-  description: 'Minimalistic personal website',
+  description: 'A minimalist personal website.',
   lang: 'en',
   themes: {
     dark: 'github-dark',
