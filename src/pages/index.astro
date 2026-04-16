@@ -7,24 +7,24 @@ import Base from '@/layouts/Base.astro'
 ---
 
 <Base>
-  <div class="bulma-container">
+  <div class="bulma-section">
     <!-- Summary with photo -->
-    <div class="bulma-section">
+    <div class="bulma-container">
       <SummaryColumns />
     </div>
 
     <!-- Experience -->
-    <section class="bulma-section">
+    <section class="bulma-container bulma-mt-6">
       <ExpCard />
     </section>
 
     <!-- Education -->
-    <section class="bulma-section">
+    <section class="bulma-container bulma-mt-6">
       <EduCard />
     </section>
 
     <!-- CV download -->
-    <div class="bulma-section">
+    <div class="bulma-container bulma-mt-6">
       <CVDownloadButton />
     </div>
   </div>
