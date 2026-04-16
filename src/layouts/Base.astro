@@ -2,10 +2,9 @@
 import config from '@/config'
 import { ViewTransitions } from 'astro:transitions'
 
-import BaseHead from '@/components/BaseHead.astro'
-
 import FooterNavbar from '@/components/FooterNavbar.astro'
 import HeaderNavbar from '@/components/HeaderNavbar.astro'
+import Metadata from '@/components/Metadata.astro'
 import '@fortawesome/fontawesome-free/css/all.css'
 import 'bulma/css/versions/bulma-prefixed.css'
 
@@ -22,7 +21,7 @@ const { title = config.title, description = config.description } = meta
 
 <html lang={config.lang}>
   <head>
-    <BaseHead title={title} description={description} />
+    <Metadata title={title} description={description} />
 
     <ViewTransitions />
   </head>
