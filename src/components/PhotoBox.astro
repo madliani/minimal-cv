@@ -1,6 +1,11 @@
+---
+import Photo from '@/assets/images/social-avatar.png'
+import { Image } from 'astro:assets'
+---
+
 <!-- Photo box -->
 <div class="bulma-box">
   <figure class="bulma-image">
-    <img alt="Photo" class="bulma-is-rounded" src="/images/social-avatar.png" />
+    <Image alt="" class="bulma-is-rounded" loading="eager" src={Photo} />
   </figure>
 </div>
