@@ -1,23 +1,13 @@
-import type { ThemeObjectOrShikiThemeName } from 'astro-expressive-code'
-
 type Config = {
   author: string
   title: string
   description: string
   lang: string
-  themes: {
-    dark: ThemeObjectOrShikiThemeName
-    light: ThemeObjectOrShikiThemeName
-  }
 }
 
 export default {
   author: 'madliani',
   title: 'madliani - Front-end developer',
   description: 'A minimalist personal website.',
-  lang: 'en',
-  themes: {
-    dark: 'github-dark',
-    light: 'github-light'
-  }
+  lang: 'en'
 } satisfies Config
