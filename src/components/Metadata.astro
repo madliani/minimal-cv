@@ -1,14 +1,14 @@
 ---
-import config from '@/config'
+import config from "@/config"
 
-type Props = {
-  title?: string
-  description?: string
+interface Props {
+    description?: string
+    title?: string
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
-const { title, description } = Astro.props
+const { description, title } = Astro.props
 
 const siteTitle = title ?? config.title
 const siteDescription = description ?? config.description
@@ -16,29 +16,29 @@ const siteDescription = description ?? config.description
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="generator" content={Astro.generator} />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content={Astro.generator} name="generator" />
 
-<link rel="icon" type="image/png" href="/icons/apple-touch-icon.png" />
+<link href="/icons/apple-touch-icon.png" rel="icon" type="image/png" />
 
 <!-- Canonical URL -->
-<link rel="canonical" href={canonicalURL} />
+<link href={canonicalURL} rel="canonical" />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
 
-<meta name="title" content={title} />
-<meta name="description" content={siteDescription} />
-<meta name="author" content={config.author} />
+<meta content={title} name="title" />
+<meta content={siteDescription} name="description" />
+<meta content={config.author} name="author" />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content={Astro.url} />
-<meta property="og:title" content={siteTitle} />
-<meta property="og:description" content={siteDescription} />
+<meta content="website" property="og:type" />
+<meta content={Astro.url} property="og:url" />
+<meta content={siteTitle} property="og:title" />
+<meta content={siteDescription} property="og:description" />
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary" />
-<meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content={siteTitle} />
-<meta property="twitter:description" content={siteDescription} />
+<meta content="summary" property="twitter:card" />
+<meta content={Astro.url} property="twitter:url" />
+<meta content={siteTitle} property="twitter:title" />
+<meta content={siteDescription} property="twitter:description" />

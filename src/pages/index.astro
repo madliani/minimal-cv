@@ -1,31 +1,31 @@
 ---
-import CVDownloadButton from '@/components/CVDownloadButton.astro'
-import EduCard from '@/components/EduCard.astro'
-import ExpCard from '@/components/ExpCard.astro'
-import SummaryColumns from '@/components/SummaryColumns.astro'
-import Base from '@/layouts/Base.astro'
+import CVDownloadButton from "@/components/CVDownloadButton.astro"
+import EduCard from "@/components/EduCard.astro"
+import ExpCard from "@/components/ExpCard.astro"
+import SummaryColumns from "@/components/SummaryColumns.astro"
+import Base from "@/layouts/Base.astro"
 ---
 
 <Base>
-  <div class="bulma-section">
-    <!-- Summary with photo -->
-    <div class="bulma-container">
-      <SummaryColumns />
+    <div class="bulma-section">
+        <!-- Summary with photo -->
+        <div class="bulma-container">
+            <SummaryColumns />
+        </div>
+
+        <!-- Experience -->
+        <section class="bulma-container bulma-mt-6">
+            <ExpCard />
+        </section>
+
+        <!-- Education -->
+        <section class="bulma-container bulma-mt-6">
+            <EduCard />
+        </section>
+
+        <!-- CV download -->
+        <div class="bulma-container bulma-mt-6">
+            <CVDownloadButton />
+        </div>
     </div>
-
-    <!-- Experience -->
-    <section class="bulma-container bulma-mt-6">
-      <ExpCard />
-    </section>
-
-    <!-- Education -->
-    <section class="bulma-container bulma-mt-6">
-      <EduCard />
-    </section>
-
-    <!-- CV download -->
-    <div class="bulma-container bulma-mt-6">
-      <CVDownloadButton />
-    </div>
-  </div>
 </Base>

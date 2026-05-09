@@ -1,6 +1,11 @@
-*.min.js
-node_modules
+# Node.js
+node_modules/
 
-**/.cache
+# pnpm
+pnpm-lock.yaml
 
-dist
+# Astro
+dist/
+
+# Broken templates
+src/layouts/Base.astro
